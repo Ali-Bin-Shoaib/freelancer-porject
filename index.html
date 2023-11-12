@@ -1,17 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- links -->
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- links -->
+		<link
+			rel="stylesheet"
+			href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+		<link
+			rel="stylesheet"
+			href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css" />
 
-    <!-- scripts -->
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
-    <title>Freelancer</title>
-</head>
-<body>
-    
-</body>
+		<!-- scripts -->
+		<script
+			src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+			defer></script>
+		<title>Freelancer</title>
+	</head>
+	<body>
+		<header class="py-2 shadow">
+			<nav class="navbar text-capitalize container">
+				<a class="navbar-brand fw-bolder fs-1" href="./">freelancer</a>
+				<ul class="navbar-nav flex-row gap-3">
+					<li class="nav-item">
+						<a class="nav-link fs-3" href="./projects">projects</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link fs-3" href="./freelancers">freelancers</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link fs-3" href="./offers">offers</a>
+					</li>
+				</ul>
+				<div>
+					<button class="btn btn-lg btn-secondary text-capitalize">
+						login <i class="bi-person me-2"></i>
+					</button>
+				</div>
+			</nav>
+		</header>
+		<main class="container">
+			<header>
+				<h1 class="text-capitalize text-center my-5 text-decoration-underline">
+					discover all projects
+				</h1>
+			</header>
+			<table class="table table-striped text-capitalize text-center">
+				<thead>
+					<tr>
+						<td>#</td>
+						<td>owner</td>
+						<td>title</td>
+						<!-- <td>description</td> -->
+						<td>type</td>
+						<td>status</td>
+						<td>posted date</td>
+						<td>needed skills</td>
+						<td>offers</td>
+						<td>expected delivery time</td>
+						<td>price</td>
+						<td>action</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>ali</td>
+						<td>website</td>
+						<!-- <td class="w-25">
+							<p class="text-truncate w-25">
+								simple freelancer website allow employers to post their projects and
+								freelancer see what project he can do and make an offer to the project
+								owner and then project owner can accepts's the best offer
+							</p>
+						</td> -->
+						<td>web development</td>
+						<td>open</td>
+						<td>2023/11/12</td>
+						<td>
+							<div class="row g-1 gap-1 row-cols-4">
+								<div class="badge bg-danger-subtle text-danger p-1">html</div>
+								<div class="badge bg-danger-subtle text-danger p-1">css</div>
+								<div class="badge bg-danger-subtle text-danger p-1">js</div>
+								<div class="badge bg-danger-subtle text-danger p-1">php</div>
+								<div class="badge bg-danger-subtle text-danger p-1">mysql</div>
+							</div>
+						</td>
+						<td>3</td>
+						<td>3 months</td>
+						<td>$500</td>
+						<td>
+							<div class="btn-group-sm">
+								<button class="btn btn-sm btn-secondary">details</button>
+								<button class="btn btn-sm btn-secondary">make offer</button>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</main>
+		<script defer>
+			document.onload = styleActiveLink();
+			function styleActiveLink() {
+				const navLinks = document.querySelectorAll('a.nav-link,a.navbar-brand');
+				navLinks.forEach((link) => {				
+					if (link.attributes.href.value === '.' + location.pathname) {
+						link.classList.add('border-bottom', 'border-black', 'border-3');
+					}
+				});
+			}
+		</script>
+	</body>
 </html>
