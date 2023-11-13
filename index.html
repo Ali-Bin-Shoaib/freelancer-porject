@@ -20,7 +20,7 @@
 	<body>
 		<header class="py-2 shadow">
 			<nav class="navbar text-capitalize container fw-semibold">
-				<a class="navbar-brand fw-bolder fs-1" href="./"
+				<a class="navbar-brand fw-bolder fs-1 " href="./"
 					><i class="bi-briefcase"></i> freelancer</a
 				>
 				<ul class="navbar-nav flex-row gap-3">
@@ -97,8 +97,10 @@
 						<td>$500</td>
 						<td class="py-2 p-0">
 							<div class="btn-group-sm">
-								<a class="btn btn-sm btn-secondary text-capitalize small my-1"
-									href="./project-details.html">details</a
+								<a
+									class="btn btn-sm btn-secondary text-capitalize small my-1"
+									href="./project-details.html"
+									>details</a
 								>
 								<a class="btn btn-sm btn-secondary text-capitalize small my-1"
 									>make offer</a
@@ -134,8 +136,10 @@
 						<td>$500</td>
 						<td class="py-2 p-0">
 							<div class="btn-group-sm">
-								<a class="btn btn-sm btn-secondary text-capitalize small my-1"
-									href="./project-details.html">details</a
+								<a
+									class="btn btn-sm btn-secondary text-capitalize small my-1"
+									href="./project-details.html"
+									>details</a
 								>
 								<a class="btn btn-sm btn-secondary text-capitalize small my-1"
 									>make offer</a
@@ -171,8 +175,10 @@
 						<td>$500</td>
 						<td class="py-2 p-0">
 							<div class="btn-group-sm">
-								<a class="btn btn-sm btn-secondary text-capitalize small my-1"
-									href="./project-details.html">details</a
+								<a
+									class="btn btn-sm btn-secondary text-capitalize small my-1"
+									href="./project-details.html"
+									>details</a
 								>
 								<a class="btn btn-sm btn-secondary text-capitalize small my-1"
 									>make offer</a
@@ -180,7 +186,6 @@
 							</div>
 						</td>
 					</tr>
-		
 				</tbody>
 				<!-- <tfoot>
                 </tfoot> -->
@@ -202,15 +207,6 @@
 			</div>
 		</footer>
 	</body>
-	<script defer>
-		document.onload = styleActiveLink();
-		function styleActiveLink() {
-			const navLinks = document.querySelectorAll('a.nav-link,a.navbar-brand');
-			navLinks.forEach((link) => {
-				if (link.attributes.href.value === '.' + location.pathname) {
-					link.classList.add('border-bottom', 'border-black', 'border-3','text-black');
-				}
-			});
-		}
-	</script>
+	<script src="./assets/js/main.js"></script>
+
 </html>
