@@ -1,47 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- links -->
-		<link
-			rel="stylesheet"
-			href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
-		<link
-			rel="stylesheet"
-			href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css" />
-
-		<!-- scripts -->
-		<script
-			src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
-			defer></script>
-		<title>Freelancer</title>
-	</head>
-	<body class="d-flex flex-column gap-5">
-		<header class="py-2 shadow mb-5">
-			<nav class="navbar text-capitalize container fw-semibold">
-				<a class="navbar-brand fw-bolder fs-1" href="./"
-					><i class="bi-briefcase"></i> freelancer</a
-				>
-				<ul class="navbar-nav flex-row gap-3">
-					<li class="nav-item">
-						<a class="nav-link fs-3" href="./projects.html">projects</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link fs-3" href="./freelancers.html">freelancers</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link fs-3" href="./offers.html">offers</a>
-					</li>
-				</ul>
-				<div>
-					<button class="btn btn-lg btn-secondary text-capitalize fw-semibold">
-						login <i class="bi-person me-2"></i>
-					</button>
-				</div>
-			</nav>
-		</header>
-		<main class="container shadow my-5 px-5">
 			<!-- <div class="float-end">
                 
             </div> -->
@@ -119,22 +75,3 @@
 					</button>
 				</div>
 			</section>
-		</main>
-		<footer class="bg-dark-subtle p-5 text-capitalize">
-			<ul class="row row-cols-3 text-center list-unstyled mb-5">
-				<li class="fw-semibold fs-3">projects</li>
-				<li class="fw-semibold fs-3">freelancers</li>
-				<li class="fw-semibold fs-3">offers</li>
-			</ul>
-			<div class="container d-flex justify-content-between align-items-center">
-				<p class="fs-3 fw-bolder">&copy; created by ali bin shoaib.</p>
-				<ul class="row row-cols-3 gy-2 list-unstyled">
-					<li class="fw-semibold"><i class="bi-linkedin fs-1"></i></li>
-					<li class="fw-semibold"><i class="bi-twitter fs-1"></i></li>
-					<li class="fw-semibold"><i class="bi-facebook fs-1"></i></li>
-				</ul>
-			</div>
-		</footer>
-	</body>
-	<script src="./assets/js/main.js"></script>
-</html>

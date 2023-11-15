@@ -1,0 +1,39 @@
+// required to get $orange variable
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../../node_modules/bootstrap/scss/functions';
+@import '../../node_modules/bootstrap/scss/variables';
+@import '../../node_modules/bootstrap/scss/mixins';
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/* Primary color */
+$primary: #f9e0ae;
+// $primary-dark: #d7c087;
+// $primary-light: #fceff0;
+
+/* Secondary color */
+$secondary: #9a7b4d;
+// $secondary-dark: #7c613c;
+// $secondary-light: #c09870;
+
+/* Success color */
+$success: #5cb85c;
+// $success-dark: #4a964a;
+// $success-light: #fff2ee;
+
+/* Info color */
+$info: #5bc0de;
+// $info-dark: #4a94d2;
+// $info-light: #eff2f5;
+
+/* Warning color */
+$warning: #f0ad4e;
+// $warning-dark: #d9913a;
+// $warning-light: #fff9eb;
+
+/* Danger color */
+$danger: #d9534f;
+// $danger-dark: #c94543;
+// $danger-light: #f7eee7;
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+
+

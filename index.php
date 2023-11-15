@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-	<?php include './components/head.php';?>
-	<body>
+
 		<?php include './components/navbar.php';?>
 			<!-- <div class="float-end">
                 
@@ -130,7 +127,3 @@
                 </tfoot> -->
 			</table>
 		<?php include './components/footer.php';?>
-	</body>
-	<script src="./assets/js/main.js"></script>
-
-</html>

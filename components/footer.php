@@ -1,5 +1,4 @@
 		</main>
-
 		<footer class="bg-dark-subtle p-5 text-capitalize">
 			<ul class="row row-cols-3 text-center list-unstyled mb-5">
 				<li class="fw-semibold fs-3">projects</li>
@@ -15,3 +14,7 @@
 				</ul>
 			</div>
 		</footer>
+		</body>
+		<script src="./assets/js/main.js"></script>
+
+		</html>
