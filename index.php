@@ -1,47 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- links -->
-		<link
-			rel="stylesheet"
-			href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
-		<link
-			rel="stylesheet"
-			href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css" />
-
-		<!-- scripts -->
-		<script
-			src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
-			defer></script>
-		<title>Freelancer</title>
-	</head>
+	<?php include './components/head.php';?>
 	<body>
-		<header class="py-2 shadow">
-			<nav class="navbar text-capitalize container fw-semibold">
-				<a class="navbar-brand fw-bolder fs-1 " href="./"
-					><i class="bi-briefcase"></i> freelancer</a
-				>
-				<ul class="navbar-nav flex-row gap-3">
-					<li class="nav-item">
-						<a class="nav-link fs-3" href="./projects.html">projects</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link fs-3" href="./freelancers.html">freelancers</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link fs-3" href="./offers.html">offers</a>
-					</li>
-				</ul>
-				<div>
-					<button class="btn btn-lg btn-secondary text-capitalize fw-semibold">
-						login <i class="bi-person me-2"></i>
-					</button>
-				</div>
-			</nav>
-		</header>
-		<main class="container">
+		<?php include './components/navbar.php';?>
 			<!-- <div class="float-end">
                 
             </div> -->
@@ -57,7 +18,6 @@
 						<td>#</td>
 						<td>owner</td>
 						<td>title</td>
-						<!-- <td>description</td> -->
 						<td>type</td>
 						<td>status</td>
 						<td>posted date</td>
@@ -73,13 +33,6 @@
 						<td>1</td>
 						<td>ali</td>
 						<td>website</td>
-						<!-- <td class="w-25">
-							<p class="text-truncate w-25">
-								simple freelancer website allow employers to post their projects and
-								freelancer see what project he can do and make an offer to the project
-								owner and then project owner can accepts's the best offer
-							</p>
-						</td> -->
 						<td>web development</td>
 						<td>open</td>
 						<td>2023/11/12</td>
@@ -112,13 +65,6 @@
 						<td>1</td>
 						<td>ali</td>
 						<td>website</td>
-						<!-- <td class="w-25">
-							<p class="text-truncate w-25">
-								simple freelancer website allow employers to post their projects and
-								freelancer see what project he can do and make an offer to the project
-								owner and then project owner can accepts's the best offer
-							</p>
-						</td> -->
 						<td>web development</td>
 						<td>open</td>
 						<td>2023/11/12</td>
@@ -151,13 +97,6 @@
 						<td>1</td>
 						<td>ali</td>
 						<td>website</td>
-						<!-- <td class="w-25">
-							<p class="text-truncate w-25">
-								simple freelancer website allow employers to post their projects and
-								freelancer see what project he can do and make an offer to the project
-								owner and then project owner can accepts's the best offer
-							</p>
-						</td> -->
 						<td>web development</td>
 						<td>open</td>
 						<td>2023/11/12</td>
@@ -190,22 +129,7 @@
 				<!-- <tfoot>
                 </tfoot> -->
 			</table>
-		</main>
-		<footer class="bg-dark-subtle p-5 text-capitalize">
-			<ul class="row row-cols-3 text-center list-unstyled mb-5">
-				<li class="fw-semibold fs-3">projects</li>
-				<li class="fw-semibold fs-3">freelancers</li>
-				<li class="fw-semibold fs-3">offers</li>
-			</ul>
-			<div class="container d-flex justify-content-between align-items-center">
-				<p class="fs-3 fw-bolder">&copy; created by ali bin shoaib.</p>
-				<ul class="row row-cols-3 gy-2 list-unstyled">
-					<li class="fw-semibold"><i class="bi-linkedin fs-1"></i></li>
-					<li class="fw-semibold"><i class="bi-twitter fs-1"></i></li>
-					<li class="fw-semibold"><i class="bi-facebook fs-1"></i></li>
-				</ul>
-			</div>
-		</footer>
+		<?php include './components/footer.php';?>
 	</body>
 	<script src="./assets/js/main.js"></script>
 
