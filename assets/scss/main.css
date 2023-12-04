@@ -1,0 +1,4 @@
+body>header:first-of-type ,footer{
+background: rgb(218,165,32);
+background: linear-gradient(129deg, rgba(218,165,32,1) 57%, rgba(108,117,125,1) 100%);
+}

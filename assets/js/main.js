@@ -7,10 +7,10 @@ function styleActiveLink() {
 			'.' + location.pathname.replace('/freelancer', '')
 		) {
 			link.classList.add(
+				'border-white',
 				'border-bottom',
-				'border-black',
 				'border-3',
-				'text-black'
+				// 'text-white'
 			);
 		}
 	});

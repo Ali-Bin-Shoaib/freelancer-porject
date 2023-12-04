@@ -1,5 +1,5 @@
 		</main>
-		<footer class="bg-dark-subtle p-5 text-capitalize">
+		<footer class="bg-secondary p-5 text-capitalize text-white">
 			<ul class="row row-cols-3 text-center list-unstyled mb-5">
 				<li class="fw-semibold fs-3">projects</li>
 				<li class="fw-semibold fs-3">freelancers</li>
