@@ -12,7 +12,7 @@ CREATE TABLE
         password VARCHAR(255) NOT NULL,
         email VARCHAR(255) UNIQUE NOT NULL,
         birthDate DATE NOT NULL,
-        type ENUM('ADMIN', 'OWNER', 'FREELANCER')
+        type ENUM ('ADMIN', 'OWNER', 'FREELANCER')
     );
 
 /* CREATE TABLE
@@ -27,26 +27,13 @@ CREATE TABLE
  ); */
 
 CREATE TABLE
-    offers (
-        id int PRIMARY KEY AUTO_INCREMENT,
-        price FLOAT NOT NULL,
-        description VARCHAR(255),
-        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-        delivery_date DATETIME NOT NULL,
-        project_id int NOT NULL,
-        freelancer_id int NOT NULL,
-        Foreign Key (freelancer_id) REFERENCES users(id),
-        Foreign Key (project_id) REFERENCES projects(id)
-    );
-
-CREATE TABLE
-    project_types(
+    project_types (
         id int PRIMARY KEY AUTO_INCREMENT,
         type VARCHAR(50)
     );
 
 CREATE TABLE
-    tags(
+    tags (
         id int PRIMARY KEY AUTO_INCREMENT,
         name VARCHAR(50)
     );
@@ -58,7 +45,7 @@ create table
         description text not null,
         budget float not null,
         expected_work_time VARCHAR(50),
-        status ENUM(
+        status ENUM (
             'SAVED',
             'PUBLISHED',
             'IN_PROGRESS',
@@ -69,39 +56,52 @@ create table
         updated_at timestamp DEFAULT CURRENT_TIMESTAMP() ON UPDATE CURRENT_TIMESTAMP(),
         project_type_id int,
         owner_id int,
-        FOREIGN key (owner_id) references users(id),
-        FOREIGN key (project_type_id) REFERENCES project_types(id)
+        FOREIGN key (owner_id) references users (id),
+        FOREIGN key (project_type_id) REFERENCES project_types (id)
     );
 
 CREATE TABLE
-    project_tags(
+    offers (
+        id int PRIMARY KEY AUTO_INCREMENT,
+        price FLOAT NOT NULL,
+        description VARCHAR(255),
+        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+        delivery_date DATETIME NOT NULL,
+        project_id int NOT NULL,
+        freelancer_id int NOT NULL,
+        Foreign Key (freelancer_id) REFERENCES users (id),
+        Foreign Key (project_id) REFERENCES projects (id)
+    );
+
+CREATE TABLE
+    project_tags (
         id int PRIMARY KEY AUTO_INCREMENT,
         project_id int,
         tag_id int,
-        Foreign Key (project_id) REFERENCES projects(id),
-        Foreign Key (tag_id) REFERENCES tags(id)
+        Foreign Key (project_id) REFERENCES projects (id),
+        Foreign Key (tag_id) REFERENCES tags (id)
     );
 
 CREATE TABLE
-    skills(
+    skills (
         id int PRIMARY KEY AUTO_INCREMENT,
         name VARCHAR(50)
     );
 
 CREATE TABLE
-    project_type_skills(
+    project_type_skills (
         id INT PRIMARY KEY AUTO_INCREMENT,
         project_type_id int,
         skill_id INT,
         Foreign Key (project_type_id) REFERENCES project_types (id),
-        Foreign Key (skill_id) REFERENCES skills(id)
+        Foreign Key (skill_id) REFERENCES skills (id)
     );
 
 CREATE TABLE
-    freelancer_skills(
+    freelancer_skills (
         id INT PRIMARY KEY AUTO_INCREMENT,
         user_id int,
         skill_id int,
-        Foreign Key (user_id) REFERENCES users(id),
+        Foreign Key (user_id) REFERENCES users (id),
         Foreign Key (skill_id) REFERENCES skills (id)
     );

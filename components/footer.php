@@ -8,9 +8,9 @@
 			<div class="container d-flex justify-content-between align-items-center">
 				<p class="fs-3 fw-bolder">&copy; created by ali bin shoaib.</p>
 				<ul class="row row-cols-3 gy-2 list-unstyled">
-					<li class="fw-semibold"><i class="bi-linkedin fs-1"></i></li>
-					<li class="fw-semibold"><i class="bi-twitter fs-1"></i></li>
-					<li class="fw-semibold"><i class="bi-facebook fs-1"></i></li>
+					<li class="fw-semibold"><a class="nav-link" href="https://www.linkedin.com"><i class="bi-linkedin fs-1"></i></a></li>
+					<li class="fw-semibold"><a class="nav-link" href="https://www.twitter.com"><i class="bi-twitter fs-1"></i></a></li>
+					<li class="fw-semibold"><a class="nav-link" href="https://www.facebook.com"><i class="bi-facebook fs-1"></i></a></li>
 				</ul>
 			</div>
 		</footer>
