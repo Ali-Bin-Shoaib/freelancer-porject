@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css" />
 	<link rel="stylesheet" href="./assets/scss/main.css" />
-
+	<link rel="shortcut icon" href="./assets/images/icon.png" type="image/x-icon">
 	<!-- scripts -->
 	<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 	<title>Freelancer</title>

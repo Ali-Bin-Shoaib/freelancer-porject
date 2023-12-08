@@ -2,7 +2,7 @@
 
 <div class="row">
 	<div class="col-12 m-5">
-		<img src="./assets/images/pexels-pixabay-38568.jpg" alt="" class="card-img rounded-5">
+		<img src="./assets/images/pexels-pixabay-38568.jpg" alt="pexels-pixabay" class="card-img rounded-5">
 	</div>
 </div>
 <header>
